@@ -22,7 +22,7 @@ function initMap() {
 
   // This customizes link to view source code; add your own GitHub repository
   map.attributionControl
-  .setPrefix('View <a href="http://github.com/jackdougherty/leaflet-storymap" target="_blank">code on GitHub</a>, created with <a href="http://leafletjs.com" title="A JS library for interactive maps">Leaflet</a>');
+  .setPrefix('View <a href="http://github.com/racheldaniell/leaflet-storymap-basic" target="_blank">code on GitHub</a>, created with <a href="http://leafletjs.com" title="A JS library for interactive maps">Leaflet</a>');
 
   // This loads the GeoJSON map data file from a local folder
   $.getJSON('map.geojson', function(data) {
@@ -32,9 +32,9 @@ function initMap() {
           // This creates numerical icons to match the ID numbers
           // OR remove the next 6 lines for default blue Leaflet markers
           var numericMarker = L.ExtraMarkers.icon({
-            icon: 'fa-number',
+            icon: 'penta',
             number: feature.properties['id'],
-            markerColor: 'blue'
+            markerColor: 'black'
           });
           layer.setIcon(numericMarker);
 
