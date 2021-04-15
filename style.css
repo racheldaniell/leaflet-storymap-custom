@@ -131,7 +131,7 @@ h3 {
 
 .outFocus {
     opacity: 0.3;
-    background-color: white;
+    background-color: #f2fcff;
 }
 
 @media only screen and (max-device-width: 480px) {
